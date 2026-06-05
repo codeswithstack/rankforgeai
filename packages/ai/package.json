@@ -6,10 +6,10 @@
   "author": "nethaji <ainethaji@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ainethaji/rankforge.git",
+    "url": "https://github.com/codeswithstack/rankforge.git",
     "directory": "packages/ai"
   },
-  "homepage": "https://github.com/ainethaji/rankforge/tree/main/packages/ai#readme",
+  "homepage": "https://github.com/codeswithstack/rankforge/tree/main/packages/ai#readme",
   "keywords": ["seo","ai","llm","meta-generation","copilot","openai","anthropic"],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

@@ -6,10 +6,10 @@
   "author": "nethaji <ainethaji@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ainethaji/rankforge.git",
+    "url": "https://github.com/codeswithstack/rankforge.git",
     "directory": "packages/sitemap"
   },
-  "homepage": "https://github.com/ainethaji/rankforge/tree/main/packages/sitemap#readme",
+  "homepage": "https://github.com/codeswithstack/rankforge/tree/main/packages/sitemap#readme",
   "keywords": ["seo","sitemap","xml-sitemap","google-news","hreflang"],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

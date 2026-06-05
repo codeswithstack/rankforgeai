@@ -6,10 +6,10 @@
   "author": "nethaji <ainethaji@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ainethaji/rankforge.git",
+    "url": "https://github.com/codeswithstack/rankforge.git",
     "directory": "packages/schema"
   },
-  "homepage": "https://github.com/ainethaji/rankforge/tree/main/packages/schema#readme",
+  "homepage": "https://github.com/codeswithstack/rankforge/tree/main/packages/schema#readme",
   "keywords": ["seo","schema-org","json-ld","structured-data","rich-results"],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

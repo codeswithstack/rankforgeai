@@ -6,10 +6,10 @@
   "author": "nethaji <ainethaji@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ainethaji/rankforge.git",
+    "url": "https://github.com/codeswithstack/rankforge.git",
     "directory": "packages/audit"
   },
-  "homepage": "https://github.com/ainethaji/rankforge/tree/main/packages/audit#readme",
+  "homepage": "https://github.com/codeswithstack/rankforge/tree/main/packages/audit#readme",
   "keywords": ["seo","audit","seo-audit","technical-seo","robots-txt","broken-links"],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

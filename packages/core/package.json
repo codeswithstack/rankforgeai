@@ -6,10 +6,10 @@
   "author": "nethaji <ainethaji@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ainethaji/rankforge.git",
+    "url": "https://github.com/codeswithstack/rankforge.git",
     "directory": "packages/core"
   },
-  "homepage": "https://github.com/ainethaji/rankforge/tree/main/packages/core#readme",
+  "homepage": "https://github.com/codeswithstack/rankforge/tree/main/packages/core#readme",
   "keywords": ["seo","html-parser","crawler","ssr","ast","nextjs"],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

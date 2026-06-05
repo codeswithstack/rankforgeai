@@ -6,10 +6,10 @@
   "author": "nethaji <ainethaji@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ainethaji/rankforge.git",
+    "url": "https://github.com/codeswithstack/rankforge.git",
     "directory": "packages/hydration"
   },
-  "homepage": "https://github.com/ainethaji/rankforge/tree/main/packages/hydration#readme",
+  "homepage": "https://github.com/codeswithstack/rankforge/tree/main/packages/hydration#readme",
   "keywords": ["seo","hydration","ssr","nextjs","react","mismatch"],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

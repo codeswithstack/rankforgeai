@@ -6,10 +6,10 @@
   "author": "nethaji <ainethaji@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ainethaji/rankforge.git",
+    "url": "https://github.com/codeswithstack/rankforge.git",
     "directory": "packages/images"
   },
-  "homepage": "https://github.com/ainethaji/rankforge/tree/main/packages/images#readme",
+  "homepage": "https://github.com/codeswithstack/rankforge/tree/main/packages/images#readme",
   "keywords": ["seo","images","alt-text","webp","avif","image-optimization"],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
