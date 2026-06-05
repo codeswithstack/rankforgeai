@@ -1,0 +1,31 @@
+{
+  "name": "@rankforge/images",
+  "version": "0.1.0",
+  "description": "Image SEO analysis, AI-powered alt text generation, and WebP/AVIF conversion",
+  "license": "MIT",
+  "author": "nethaji <ainethaji@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ainethaji/rankforge.git",
+    "directory": "packages/images"
+  },
+  "homepage": "https://github.com/ainethaji/rankforge/tree/main/packages/images#readme",
+  "keywords": ["seo","images","alt-text","webp","avif","image-optimization"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  
+  "exports": { ".": "./dist/index.js" },
+  "files": ["dist"],
+  "engines": { "node": ">=18.0.0" },
+  "peerDependencies": { "sharp": ">=0.33.0" }, "peerDependenciesMeta": { "sharp": { "optional": true } },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": { "access": "public" },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

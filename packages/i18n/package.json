@@ -1,0 +1,31 @@
+{
+  "name": "@rankforge/i18n",
+  "version": "0.1.0",
+  "description": "International SEO utilities — hreflang generation, locale routing, and RTL support",
+  "license": "MIT",
+  "author": "nethaji <ainethaji@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ainethaji/rankforge.git",
+    "directory": "packages/i18n"
+  },
+  "homepage": "https://github.com/ainethaji/rankforge/tree/main/packages/i18n#readme",
+  "keywords": ["seo","i18n","hreflang","internationalization","rtl","locale"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  
+  "exports": { ".": "./dist/index.js" },
+  "files": ["dist"],
+  "engines": { "node": ">=18.0.0" },
+  
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": { "access": "public" },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

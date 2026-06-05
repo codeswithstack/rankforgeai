@@ -1,0 +1,31 @@
+{
+  "name": "@rankforge/meta",
+  "version": "0.1.0",
+  "description": "Meta tag generation, validation, and SERP preview for RankForge AI",
+  "license": "MIT",
+  "author": "nethaji <ainethaji@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ainethaji/rankforge.git",
+    "directory": "packages/meta"
+  },
+  "homepage": "https://github.com/ainethaji/rankforge/tree/main/packages/meta#readme",
+  "keywords": ["seo", "meta-tags", "open-graph", "twitter-card", "serp", "canonical"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": ["dist"],
+  "engines": { "node": ">=18.0.0" },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": { "access": "public" },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

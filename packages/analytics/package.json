@@ -1,0 +1,31 @@
+{
+  "name": "@rankforge/analytics",
+  "version": "0.1.0",
+  "description": "Keyword ranking tracker, indexing stats, crawl coverage, and traffic analytics",
+  "license": "MIT",
+  "author": "nethaji <ainethaji@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ainethaji/rankforge.git",
+    "directory": "packages/analytics"
+  },
+  "homepage": "https://github.com/ainethaji/rankforge/tree/main/packages/analytics#readme",
+  "keywords": ["seo","analytics","keyword-tracking","ranking","indexing","traffic"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  
+  "exports": { ".": "./dist/index.js" },
+  "files": ["dist"],
+  "engines": { "node": ">=18.0.0" },
+  
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": { "access": "public" },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

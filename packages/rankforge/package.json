@@ -1,0 +1,48 @@
+{
+  "name": "rankforge",
+  "version": "0.1.0",
+  "description": "AI-powered SEO and web performance optimization — all 15 packages in one",
+  "license": "MIT",
+  "author": "nethaji <ainethaji@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ainethaji/rankforge.git",
+    "directory": "packages/rankforge"
+  },
+  "homepage": "https://github.com/ainethaji/rankforge#readme",
+  "keywords": ["seo", "ai", "performance", "core-web-vitals", "nextjs", "sitemap", "schema", "audit", "monitor"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": ["dist"],
+  "engines": { "node": ">=18.0.0" },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": { "access": "public" },
+  "dependencies": {
+    "@rankforge/ai": "*",
+    "@rankforge/analytics": "*",
+    "@rankforge/audit": "*",
+    "@rankforge/cli": "*",
+    "@rankforge/core": "*",
+    "@rankforge/edge": "*",
+    "@rankforge/hydration": "*",
+    "@rankforge/i18n": "*",
+    "@rankforge/images": "*",
+    "@rankforge/meta": "*",
+    "@rankforge/monitor": "*",
+    "@rankforge/performance": "*",
+    "@rankforge/schema": "*",
+    "@rankforge/security": "*",
+    "@rankforge/sitemap": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
