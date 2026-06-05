@@ -1,15 +1,15 @@
-# @rankforge/analytics
+# @rankforge-root/analytics
 
 Keyword ranking tracker, indexing stats, crawl coverage, and traffic analytics.
 
 ## Install
 ```bash
-npm install @rankforge/analytics
+npm install @rankforge-root/analytics
 ```
 
 ## Usage
 ```ts
-import { KeywordTracker, RankingTrends, IndexingStats, CrawlAnalytics, TrafficAnalytics } from '@rankforge/analytics'
+import { KeywordTracker, RankingTrends, IndexingStats, CrawlAnalytics, TrafficAnalytics } from '@rankforge-root/analytics'
 
 // Track keyword rankings over time
 const tracker = new KeywordTracker()

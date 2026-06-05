@@ -1,15 +1,15 @@
-# @rankforge/security
+# @rankforge-root/security
 
 SEO security toolkit — cloaking detection, spam injection, poisoning, and bot filtering.
 
 ## Install
 ```bash
-npm install @rankforge/security
+npm install @rankforge-root/security
 ```
 
 ## Usage
 ```ts
-import { detectCloaking, detectSEOPoisoning, detectSpamInjection, filterBots, detectMixedContent } from '@rankforge/security'
+import { detectCloaking, detectSEOPoisoning, detectSpamInjection, filterBots, detectMixedContent } from '@rankforge-root/security'
 
 // Cloaking: different content for bots vs users
 const result = detectCloaking(botHTML, userHTML)

@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/meta",
+  "name": "@rankforge-root/meta",
   "version": "0.1.0",
   "description": "Meta tag generation, validation, and SERP preview for RankForge AI",
   "license": "MIT",

@@ -1,5 +1,5 @@
 {
-  "name": "rankforge",
+  "name": "rankforgeai",
   "version": "0.1.0",
   "description": "AI-powered SEO and web performance optimization — all 15 packages in one",
   "license": "MIT",
@@ -26,21 +26,21 @@
   },
   "publishConfig": { "access": "public" },
   "dependencies": {
-    "@rankforge/ai": "*",
-    "@rankforge/analytics": "*",
-    "@rankforge/audit": "*",
-    "@rankforge/cli": "*",
-    "@rankforge/core": "*",
-    "@rankforge/edge": "*",
-    "@rankforge/hydration": "*",
-    "@rankforge/i18n": "*",
-    "@rankforge/images": "*",
-    "@rankforge/meta": "*",
-    "@rankforge/monitor": "*",
-    "@rankforge/performance": "*",
-    "@rankforge/schema": "*",
-    "@rankforge/security": "*",
-    "@rankforge/sitemap": "*"
+    "@rankforge-root/ai": "*",
+    "@rankforge-root/analytics": "*",
+    "@rankforge-root/audit": "*",
+    "@rankforge-root/cli": "*",
+    "@rankforge-root/core": "*",
+    "@rankforge-root/edge": "*",
+    "@rankforge-root/hydration": "*",
+    "@rankforge-root/i18n": "*",
+    "@rankforge-root/images": "*",
+    "@rankforge-root/meta": "*",
+    "@rankforge-root/monitor": "*",
+    "@rankforge-root/performance": "*",
+    "@rankforge-root/schema": "*",
+    "@rankforge-root/security": "*",
+    "@rankforge-root/sitemap": "*"
   },
   "devDependencies": {
     "typescript": "^5.4.0"

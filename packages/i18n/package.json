@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/i18n",
+  "name": "@rankforge-root/i18n",
   "version": "0.1.0",
   "description": "International SEO utilities — hreflang generation, locale routing, and RTL support",
   "license": "MIT",

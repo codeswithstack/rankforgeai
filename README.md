@@ -8,21 +8,21 @@ AI-powered SEO and web performance optimization toolkit — a Turborepo monorepo
 
 | Package | Description |
 |---|---|
-| `@rankforge/core` | HTML parser, crawler engine, SSR analyzer, AST inspector |
-| `@rankforge/meta` | Meta tag generation, validation, SERP preview |
-| `@rankforge/schema` | JSON-LD schema builders (Article, Product, FAQ, Event, Recipe…) |
-| `@rankforge/sitemap` | XML sitemap generation — news, image, video, multilingual, compressed |
-| `@rankforge/i18n` | Hreflang generation, locale routing, RTL meta |
-| `@rankforge/performance` | LCP, CLS, INP, TTFB — issue detection and scoring |
-| `@rankforge/hydration` | SSR/CSR hydration mismatch detection and fix suggestions |
-| `@rankforge/audit` | Full-site SEO audit engine with pluggable fetcher |
-| `@rankforge/images` | Alt text detection, AI-powered alt generation, WebP/AVIF conversion |
-| `@rankforge/monitor` | RUM collector, alert engine, Slack/Discord/webhook notifications |
-| `@rankforge/security` | Cloaking detection, SEO poisoning, spam injection, mixed content |
-| `@rankforge/ai` | LLM-powered meta, links, content analysis, fix generation, copilot |
-| `@rankforge/analytics` | Keyword tracking, ranking trends, indexing stats, traffic analytics |
-| `@rankforge/edge` | Edge-side SEO — meta rewriting, CDN cache headers, geo routing |
-| `@rankforge/cli` | `rankforge` CLI — init, audit, fix, sitemap, schema, optimize, monitor |
+| `@rankforge-root/core` | HTML parser, crawler engine, SSR analyzer, AST inspector |
+| `@rankforge-root/meta` | Meta tag generation, validation, SERP preview |
+| `@rankforge-root/schema` | JSON-LD schema builders (Article, Product, FAQ, Event, Recipe…) |
+| `@rankforge-root/sitemap` | XML sitemap generation — news, image, video, multilingual, compressed |
+| `@rankforge-root/i18n` | Hreflang generation, locale routing, RTL meta |
+| `@rankforge-root/performance` | LCP, CLS, INP, TTFB — issue detection and scoring |
+| `@rankforge-root/hydration` | SSR/CSR hydration mismatch detection and fix suggestions |
+| `@rankforge-root/audit` | Full-site SEO audit engine with pluggable fetcher |
+| `@rankforge-root/images` | Alt text detection, AI-powered alt generation, WebP/AVIF conversion |
+| `@rankforge-root/monitor` | RUM collector, alert engine, Slack/Discord/webhook notifications |
+| `@rankforge-root/security` | Cloaking detection, SEO poisoning, spam injection, mixed content |
+| `@rankforge-root/ai` | LLM-powered meta, links, content analysis, fix generation, copilot |
+| `@rankforge-root/analytics` | Keyword tracking, ranking trends, indexing stats, traffic analytics |
+| `@rankforge-root/edge` | Edge-side SEO — meta rewriting, CDN cache headers, geo routing |
+| `@rankforge-root/cli` | `rankforge` CLI — init, audit, fix, sitemap, schema, optimize, monitor |
 
 ---
 
@@ -82,7 +82,7 @@ rankforge monitor --interval 300
 ### Meta Tags
 
 ```ts
-import { generateMeta, validateMeta } from '@rankforge/meta'
+import { generateMeta, validateMeta } from '@rankforge-root/meta'
 
 const meta = generateMeta({
   title: 'RankForge — AI SEO Toolkit',
@@ -97,7 +97,7 @@ const issues = validateMeta(meta)
 ### Structured Data
 
 ```ts
-import { generateArticleSchema, renderSchemaTag } from '@rankforge/schema'
+import { generateArticleSchema, renderSchemaTag } from '@rankforge-root/schema'
 
 const schema = generateArticleSchema({
   headline: 'How to Improve Core Web Vitals',
@@ -111,7 +111,7 @@ console.log(renderSchemaTag(schema))
 ### AI Copilot
 
 ```ts
-import { AICopilot } from '@rankforge/ai'
+import { AICopilot } from '@rankforge-root/ai'
 
 const copilot = new AICopilot(myLLM)
 
@@ -126,7 +126,7 @@ console.log(response.fixSteps)
 ### Performance Scoring
 
 ```ts
-import { calculateLCPScore, detectLCPIssues } from '@rankforge/performance'
+import { calculateLCPScore, detectLCPIssues } from '@rankforge-root/performance'
 
 const score = calculateLCPScore(2400) // ms → 0-100
 const issues = detectLCPIssues({ resources: [...], renderBlockers: [...] })
@@ -135,7 +135,7 @@ const issues = detectLCPIssues({ resources: [...], renderBlockers: [...] })
 ### Hydration Mismatch Detection
 
 ```ts
-import { detectHydrationMismatches } from '@rankforge/hydration'
+import { detectHydrationMismatches } from '@rankforge-root/hydration'
 
 const result = detectHydrationMismatches(serverHTML, clientHTML)
 if (result.hasMismatches) {

@@ -1,15 +1,15 @@
-# @rankforge/sitemap
+# @rankforge-root/sitemap
 
 XML sitemap generation — standard, image, video, news, multilingual, and index sitemaps.
 
 ## Install
 ```bash
-npm install @rankforge/sitemap
+npm install @rankforge-root/sitemap
 ```
 
 ## Usage
 ```ts
-import { generateSitemap, generateImageSitemap, generateNewsSitemap, compressSitemap, validateSitemap } from '@rankforge/sitemap'
+import { generateSitemap, generateImageSitemap, generateNewsSitemap, compressSitemap, validateSitemap } from '@rankforge-root/sitemap'
 
 const xml = generateSitemap([
   { url: 'https://example.com/', changefreq: 'daily', priority: 1.0 },

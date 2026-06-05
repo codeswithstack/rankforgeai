@@ -1,15 +1,15 @@
-# @rankforge/edge
+# @rankforge-root/edge
 
 Edge-side SEO — meta rewriting, CDN cache headers, and geo-based routing.
 
 ## Install
 ```bash
-npm install @rankforge/edge
+npm install @rankforge-root/edge
 ```
 
 ## Usage
 ```ts
-import { EdgeSEOOptimizer, generateCDNCacheHeaders, detectGeoSEO, analyzeEdgeRendering } from '@rankforge/edge'
+import { EdgeSEOOptimizer, generateCDNCacheHeaders, detectGeoSEO, analyzeEdgeRendering } from '@rankforge-root/edge'
 
 // Rewrite meta tags at the CDN edge
 const optimizer = new EdgeSEOOptimizer()

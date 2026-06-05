@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/images",
+  "name": "@rankforge-root/images",
   "version": "0.1.0",
   "description": "Image SEO analysis, AI-powered alt text generation, and WebP/AVIF conversion",
   "license": "MIT",

@@ -1,15 +1,15 @@
-# @rankforge/hydration
+# @rankforge-root/hydration
 
 SSR/CSR hydration mismatch detection and fix suggestions for React and Next.js.
 
 ## Install
 ```bash
-npm install @rankforge/hydration
+npm install @rankforge-root/hydration
 ```
 
 ## Usage
 ```ts
-import { detectHydrationMismatches, generateHydrationFix, suggestUseEffect, suggestDynamicImport } from '@rankforge/hydration'
+import { detectHydrationMismatches, generateHydrationFix, suggestUseEffect, suggestDynamicImport } from '@rankforge-root/hydration'
 
 // Detect mismatches between server and client HTML
 const result = detectHydrationMismatches(serverHTML, clientHTML)

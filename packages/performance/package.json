@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/performance",
+  "name": "@rankforge-root/performance",
   "version": "0.1.0",
   "description": "Core Web Vitals detection and scoring — LCP, CLS, INP, and TTFB",
   "license": "MIT",

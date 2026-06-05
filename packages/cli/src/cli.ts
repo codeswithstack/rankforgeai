@@ -268,7 +268,7 @@ function getFlagValue(args: string[], flag: string): string | undefined {
 }
 
 function generateConfigTemplate(framework: string | null): string {
-  return `import { defineConfig } from '@rankforge/core'
+  return `import { defineConfig } from '@rankforge-root/core'
 
 export default defineConfig({
   baseUrl: 'https://your-site.com',${framework ? `\n  framework: "${framework}",` : ''}

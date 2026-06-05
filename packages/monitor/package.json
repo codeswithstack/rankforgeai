@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/monitor",
+  "name": "@rankforge-root/monitor",
   "version": "0.1.0",
   "description": "Real User Monitoring, performance alerting, and multi-channel notifications",
   "license": "MIT",

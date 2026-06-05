@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/schema",
+  "name": "@rankforge-root/schema",
   "version": "0.1.0",
   "description": "JSON-LD structured data schema builders for rich search results",
   "license": "MIT",

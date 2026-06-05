@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/edge",
+  "name": "@rankforge-root/edge",
   "version": "0.1.0",
   "description": "Edge-side SEO — meta rewriting, CDN cache headers, and geo-based routing",
   "license": "MIT",

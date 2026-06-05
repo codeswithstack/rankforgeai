@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/ai",
+  "name": "@rankforge-root/ai",
   "version": "0.1.0",
   "description": "AI-powered SEO tools — meta generation, link suggestions, content analysis, and copilot",
   "license": "MIT",

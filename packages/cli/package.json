@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/cli",
+  "name": "@rankforge-root/cli",
   "version": "0.1.0",
   "description": "Command-line interface for RankForge AI — audit, fix, sitemap, schema, and monitor",
   "license": "MIT",

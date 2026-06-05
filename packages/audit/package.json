@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/audit",
+  "name": "@rankforge-root/audit",
   "version": "0.1.0",
   "description": "Full-site SEO audit engine with pluggable HTTP fetcher",
   "license": "MIT",

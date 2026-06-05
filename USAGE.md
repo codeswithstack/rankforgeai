@@ -6,33 +6,33 @@ All 15 packages with real examples.
 
 ## Table of Contents
 
-1. [@rankforge/core](#1-rankforgecore)
-2. [@rankforge/meta](#2-rankforgemeta)
-3. [@rankforge/schema](#3-rankforgeschema)
-4. [@rankforge/sitemap](#4-rankforgesitemap)
-5. [@rankforge/i18n](#5-rankforgei18n)
-6. [@rankforge/performance](#6-rankforgeperformance)
-7. [@rankforge/hydration](#7-rankforgehydration)
-8. [@rankforge/audit](#8-rankforgeaudit)
-9. [@rankforge/images](#9-rankforgeimages)
-10. [@rankforge/monitor](#10-rankforgemonitor)
-11. [@rankforge/security](#11-rankforgesecurity)
-12. [@rankforge/ai](#12-rankforgeai)
-13. [@rankforge/analytics](#13-rankforgeanalytics)
-14. [@rankforge/edge](#14-rankforgeedge)
-15. [@rankforge/cli](#15-rankforgecli)
+1. [@rankforge-root/core](#1-rankforgecore)
+2. [@rankforge-root/meta](#2-rankforgemeta)
+3. [@rankforge-root/schema](#3-rankforgeschema)
+4. [@rankforge-root/sitemap](#4-rankforgesitemap)
+5. [@rankforge-root/i18n](#5-rankforgei18n)
+6. [@rankforge-root/performance](#6-rankforgeperformance)
+7. [@rankforge-root/hydration](#7-rankforgehydration)
+8. [@rankforge-root/audit](#8-rankforgeaudit)
+9. [@rankforge-root/images](#9-rankforgeimages)
+10. [@rankforge-root/monitor](#10-rankforgemonitor)
+11. [@rankforge-root/security](#11-rankforgesecurity)
+12. [@rankforge-root/ai](#12-rankforgeai)
+13. [@rankforge-root/analytics](#13-rankforgeanalytics)
+14. [@rankforge-root/edge](#14-rankforgeedge)
+15. [@rankforge-root/cli](#15-rankforgecli)
 16. [Full pipeline example](#16-full-pipeline-example)
 
 ---
 
-## 1. @rankforge/core
+## 1. @rankforge-root/core
 
 Parse HTML, crawl sites, detect SSR, and analyze React/Next.js source code.
 
 ### HTML Parsing
 
 ```ts
-import { parseHTML, extractMeta, extractHeadings, extractLinks } from '@rankforge/core'
+import { parseHTML, extractMeta, extractHeadings, extractLinks } from '@rankforge-root/core'
 
 const html = `
   <html>
@@ -68,7 +68,7 @@ const links = extractLinks(doc, 'https://example.com')
 ### Crawling a Website
 
 ```ts
-import { CrawlEngine } from '@rankforge/core'
+import { CrawlEngine } from '@rankforge-root/core'
 
 const crawler = new CrawlEngine({
   baseUrl: 'https://example.com',
@@ -113,7 +113,7 @@ const dupes = crawler.detectDuplicateContent(pages)
 ### SSR Detection
 
 ```ts
-import { analyzeSSR, SSRAnalyzer } from '@rankforge/core'
+import { analyzeSSR, SSRAnalyzer } from '@rankforge-root/core'
 
 const result = analyzeSSR(html)
 // { isSSR: true, hasContent: true, framework: 'nextjs' }
@@ -141,7 +141,7 @@ const appRoutes = analyzer.extractAppRouterRoutes([
 ### AST / Source Code Analysis
 
 ```ts
-import { ASTParser, extractReactMetaTags, detectMissingImageProps } from '@rankforge/core'
+import { ASTParser, extractReactMetaTags, detectMissingImageProps } from '@rankforge-root/core'
 
 const parser = new ASTParser({ framework: 'nextjs' })
 
@@ -170,12 +170,12 @@ const imgIssues = detectMissingImageProps(`
 
 ---
 
-## 2. @rankforge/meta
+## 2. @rankforge-root/meta
 
 Generate, validate, and preview meta tags.
 
 ```ts
-import { generateMeta, validateMeta, truncateTitle, generateSERPPreview } from '@rankforge/meta'
+import { generateMeta, validateMeta, truncateTitle, generateSERPPreview } from '@rankforge-root/meta'
 
 // Generate complete meta tag data
 const meta = generateMeta({
@@ -225,7 +225,7 @@ const serp = generateSERPPreview({
 
 ---
 
-## 3. @rankforge/schema
+## 3. @rankforge-root/schema
 
 Generate JSON-LD structured data for rich search results.
 
@@ -241,7 +241,7 @@ import {
   generateRecipeSchema,
   validateSchema,
   renderSchemaTag,
-} from '@rankforge/schema'
+} from '@rankforge-root/schema'
 
 // Article / Blog Post
 const article = generateArticleSchema({
@@ -319,7 +319,7 @@ const tag = renderSchemaTag(article)
 
 ---
 
-## 4. @rankforge/sitemap
+## 4. @rankforge-root/sitemap
 
 Generate all sitemap variants — standard, images, videos, news, multilingual, and index.
 
@@ -334,7 +334,7 @@ import {
   chunkSitemap,
   compressSitemap,
   validateSitemap,
-} from '@rankforge/sitemap'
+} from '@rankforge-root/sitemap'
 
 // Standard sitemap
 const xml = generateSitemap([
@@ -417,7 +417,7 @@ const result = validateSitemap(xml)
 
 ---
 
-## 5. @rankforge/i18n
+## 5. @rankforge-root/i18n
 
 Hreflang tags, locale routing, RTL support, and missing translation detection.
 
@@ -430,7 +430,7 @@ import {
   detectDuplicateLocales,
   generateRTLMeta,
   resolveLocaleRoute,
-} from '@rankforge/i18n'
+} from '@rankforge-root/i18n'
 
 // Generate hreflang tags for a multilingual page
 const tags = generateHreflang([
@@ -474,7 +474,7 @@ const ltrMeta = generateRTLMeta('en')
 
 ---
 
-## 6. @rankforge/performance
+## 6. @rankforge-root/performance
 
 Detect and score LCP, CLS, INP, and TTFB issues.
 
@@ -484,7 +484,7 @@ import {
   detectCLSIssues, generateCLSFixes, calculateCLSScore,
   detectINPIssues, generateINPFixes, calculateINPScore,
   detectTTFBIssues, generateTTFBFixes, calculateTTFBScore,
-} from '@rankforge/performance'
+} from '@rankforge-root/performance'
 
 // ── LCP (Largest Contentful Paint) ───────────────────────────────────────────
 
@@ -564,7 +564,7 @@ calculateTTFBScore(1500)  // 0
 
 ---
 
-## 7. @rankforge/hydration
+## 7. @rankforge-root/hydration
 
 Detect and fix SSR/CSR hydration mismatches in React/Next.js apps.
 
@@ -576,7 +576,7 @@ import {
   generateHydrationFix,
   suggestUseEffect,
   suggestDynamicImport,
-} from '@rankforge/hydration'
+} from '@rankforge-root/hydration'
 
 // Compare server-rendered HTML vs client-rendered HTML
 const result = detectHydrationMismatches(
@@ -633,12 +633,12 @@ const dynImport = suggestDynamicImport('MapWidget', './components/MapWidget')
 
 ---
 
-## 8. @rankforge/audit
+## 8. @rankforge-root/audit
 
 Full-site SEO audit engine with pluggable HTTP fetcher.
 
 ```ts
-import { runAudit, AuditEngine } from '@rankforge/audit'
+import { runAudit, AuditEngine } from '@rankforge-root/audit'
 
 // Quick single-page audit
 const report = await runAudit({
@@ -707,7 +707,7 @@ const jsonReport = engine.exportReport({ format: 'json' })
 
 ---
 
-## 9. @rankforge/images
+## 9. @rankforge-root/images
 
 Detect image issues, generate alt text with AI, and convert formats.
 
@@ -719,7 +719,7 @@ import {
   convertToWebP,
   convertToAVIF,
   generateResponsiveSizes,
-} from '@rankforge/images'
+} from '@rankforge-root/images'
 
 // Detect all image issues on a page
 const issues = detectImageIssues([
@@ -773,12 +773,12 @@ const sizes = generateResponsiveSizes(1920)
 
 ---
 
-## 10. @rankforge/monitor
+## 10. @rankforge-root/monitor
 
 Real User Monitoring, alerting, and notifications.
 
 ```ts
-import { RUMCollector, AlertEngine, NotificationService, Monitor } from '@rankforge/monitor'
+import { RUMCollector, AlertEngine, NotificationService, Monitor } from '@rankforge-root/monitor'
 
 // ── RUM Collector ─────────────────────────────────────────────────────────────
 const rum = new RUMCollector()
@@ -859,7 +859,7 @@ const diff = monitor.diffCrawls(previousCrawl, currentCrawl)
 
 ---
 
-## 11. @rankforge/security
+## 11. @rankforge-root/security
 
 Detect cloaking, SEO poisoning, spam, mixed content, and malicious redirects.
 
@@ -871,7 +871,7 @@ import {
   detectMixedContent,
   detectMaliciousRedirects,
   filterBots,
-} from '@rankforge/security'
+} from '@rankforge-root/security'
 
 // Cloaking: serving different content to bots vs users
 const cloaking = detectCloaking(
@@ -929,7 +929,7 @@ const human = filterBots('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Chrome
 
 ---
 
-## 12. @rankforge/ai
+## 12. @rankforge-root/ai
 
 LLM-powered meta generation, link suggestions, keyword clustering, fix generation, and copilot.
 
@@ -962,7 +962,7 @@ import {
   AIContentAnalyzer,
   AIFixGenerator,
   AICopilot,
-} from '@rankforge/ai'
+} from '@rankforge-root/ai'
 
 // ── Meta Generation ───────────────────────────────────────────────────────────
 const metaGen = new AIMetaGenerator(llm)
@@ -1061,7 +1061,7 @@ const response = await copilot.ask('Why is my LCP slow?', {
 
 ---
 
-## 13. @rankforge/analytics
+## 13. @rankforge-root/analytics
 
 Track keyword rankings, indexing stats, crawl coverage, and traffic.
 
@@ -1072,7 +1072,7 @@ import {
   IndexingStats,
   CrawlAnalytics,
   TrafficAnalytics,
-} from '@rankforge/analytics'
+} from '@rankforge-root/analytics'
 
 // ── Keyword Tracking ──────────────────────────────────────────────────────────
 const tracker = new KeywordTracker()
@@ -1138,7 +1138,7 @@ traffic.getTopPages(3)         // [{ page: '/blog/cwv', sessions: 2350 }]
 
 ---
 
-## 14. @rankforge/edge
+## 14. @rankforge-root/edge
 
 Edge-side SEO — meta rewriting, CDN caching, and geo-based routing.
 
@@ -1148,7 +1148,7 @@ import {
   detectGeoSEO,
   generateCDNCacheHeaders,
   analyzeEdgeRendering,
-} from '@rankforge/edge'
+} from '@rankforge-root/edge'
 
 // ── Edge Meta Rewriting ───────────────────────────────────────────────────────
 const optimizer = new EdgeSEOOptimizer()
@@ -1224,7 +1224,7 @@ const rendering = analyzeEdgeRendering({
 
 ---
 
-## 15. @rankforge/cli
+## 15. @rankforge-root/cli
 
 The `rankforge` command-line tool — also usable as a Node.js module.
 
@@ -1265,7 +1265,7 @@ rankforge monitor --interval 300
 ### Programmatic API
 
 ```ts
-import { RankForgeCLI, MockFileSystem } from '@rankforge/cli'
+import { RankForgeCLI, MockFileSystem } from '@rankforge-root/cli'
 
 // Use with a real file system
 const cli = new RankForgeCLI()
@@ -1302,19 +1302,19 @@ await cli.run(['audit', '--url', 'https://example.com', '--min-score', '90'])
 All packages working together in a complete SEO audit + fix workflow.
 
 ```ts
-import { parseHTML, extractMeta, extractLinks, analyzeSSR } from '@rankforge/core'
-import { validateMeta } from '@rankforge/meta'
-import { detectImageIssues, generateAltText } from '@rankforge/images'
-import { runAudit } from '@rankforge/audit'
-import { detectLCPIssues, calculateLCPScore } from '@rankforge/performance'
-import { detectHydrationMismatches } from '@rankforge/hydration'
-import { detectSEOPoisoning, filterBots } from '@rankforge/security'
-import { generateSitemap } from '@rankforge/sitemap'
-import { generateHreflang } from '@rankforge/i18n'
-import { RUMCollector, AlertEngine, NotificationService } from '@rankforge/monitor'
-import { KeywordTracker } from '@rankforge/analytics'
-import { generateCDNCacheHeaders } from '@rankforge/edge'
-import { AICopilot, AIFixGenerator } from '@rankforge/ai'
+import { parseHTML, extractMeta, extractLinks, analyzeSSR } from '@rankforge-root/core'
+import { validateMeta } from '@rankforge-root/meta'
+import { detectImageIssues, generateAltText } from '@rankforge-root/images'
+import { runAudit } from '@rankforge-root/audit'
+import { detectLCPIssues, calculateLCPScore } from '@rankforge-root/performance'
+import { detectHydrationMismatches } from '@rankforge-root/hydration'
+import { detectSEOPoisoning, filterBots } from '@rankforge-root/security'
+import { generateSitemap } from '@rankforge-root/sitemap'
+import { generateHreflang } from '@rankforge-root/i18n'
+import { RUMCollector, AlertEngine, NotificationService } from '@rankforge-root/monitor'
+import { KeywordTracker } from '@rankforge-root/analytics'
+import { generateCDNCacheHeaders } from '@rankforge-root/edge'
+import { AICopilot, AIFixGenerator } from '@rankforge-root/ai'
 
 async function auditPage(url: string, html: string, llm: LLM) {
   // 1. Block bots from affecting metrics
@@ -1455,11 +1455,11 @@ Since this is a monorepo, each package can be used independently once published:
 
 ```bash
 # Install only what you need
-npm install @rankforge/core @rankforge/meta @rankforge/audit
+npm install @rankforge-root/core @rankforge-root/meta @rankforge-root/audit
 
 # Or install everything
-npm install @rankforge/ai @rankforge/analytics @rankforge/audit \
-  @rankforge/cli @rankforge/core @rankforge/edge @rankforge/hydration \
-  @rankforge/i18n @rankforge/images @rankforge/meta @rankforge/monitor \
-  @rankforge/performance @rankforge/schema @rankforge/security @rankforge/sitemap
+npm install @rankforge-root/ai @rankforge-root/analytics @rankforge-root/audit \
+  @rankforge-root/cli @rankforge-root/core @rankforge-root/edge @rankforge-root/hydration \
+  @rankforge-root/i18n @rankforge-root/images @rankforge-root/meta @rankforge-root/monitor \
+  @rankforge-root/performance @rankforge-root/schema @rankforge-root/security @rankforge-root/sitemap
 ```

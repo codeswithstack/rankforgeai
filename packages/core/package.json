@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/core",
+  "name": "@rankforge-root/core",
   "version": "0.1.0",
   "description": "HTML parser, web crawler, SSR analyzer, and AST inspection tools for RankForge AI",
   "license": "MIT",

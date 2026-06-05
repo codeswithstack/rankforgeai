@@ -1,10 +1,10 @@
-# @rankforge/performance
+# @rankforge-root/performance
 
 Core Web Vitals detection and scoring — LCP, CLS, INP, and TTFB.
 
 ## Install
 ```bash
-npm install @rankforge/performance
+npm install @rankforge-root/performance
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ import {
   detectCLSIssues, calculateCLSScore,
   detectINPIssues, calculateINPScore,
   detectTTFBIssues, calculateTTFBScore,
-} from '@rankforge/performance'
+} from '@rankforge-root/performance'
 
 // Detect issues
 const lcpIssues = detectLCPIssues({

@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/sitemap",
+  "name": "@rankforge-root/sitemap",
   "version": "0.1.0",
   "description": "XML sitemap generation — standard, image, video, news, multilingual, and index sitemaps",
   "license": "MIT",

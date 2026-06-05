@@ -1,15 +1,15 @@
-# @rankforge/schema
+# @rankforge-root/schema
 
 JSON-LD structured data builders for rich search results.
 
 ## Install
 ```bash
-npm install @rankforge/schema
+npm install @rankforge-root/schema
 ```
 
 ## Usage
 ```ts
-import { generateArticleSchema, generateFAQSchema, generateProductSchema, renderSchemaTag, validateSchema } from '@rankforge/schema'
+import { generateArticleSchema, generateFAQSchema, generateProductSchema, renderSchemaTag, validateSchema } from '@rankforge-root/schema'
 
 const schema = generateArticleSchema({
   headline: 'How to Improve Core Web Vitals',

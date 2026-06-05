@@ -1,10 +1,10 @@
-# @rankforge/images
+# @rankforge-root/images
 
 Image SEO analysis, AI-powered alt text generation, and WebP/AVIF conversion.
 
 ## Install
 ```bash
-npm install @rankforge/images
+npm install @rankforge-root/images
 
 # For real image conversion (optional)
 npm install sharp
@@ -12,7 +12,7 @@ npm install sharp
 
 ## Usage
 ```ts
-import { detectImageIssues, generateAltText, generateImageFix, convertToWebP, generateResponsiveSizes } from '@rankforge/images'
+import { detectImageIssues, generateAltText, generateImageFix, convertToWebP, generateResponsiveSizes } from '@rankforge-root/images'
 
 // Detect issues
 const issues = detectImageIssues([

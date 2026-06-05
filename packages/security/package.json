@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/security",
+  "name": "@rankforge-root/security",
   "version": "0.1.0",
   "description": "SEO security toolkit — cloaking detection, spam injection, poisoning, and bot filtering",
   "license": "MIT",

@@ -1,15 +1,15 @@
-# @rankforge/monitor
+# @rankforge-root/monitor
 
 Real User Monitoring, performance alerting, and multi-channel notifications.
 
 ## Install
 ```bash
-npm install @rankforge/monitor
+npm install @rankforge-root/monitor
 ```
 
 ## Usage
 ```ts
-import { RUMCollector, AlertEngine, NotificationService, Monitor } from '@rankforge/monitor'
+import { RUMCollector, AlertEngine, NotificationService, Monitor } from '@rankforge-root/monitor'
 
 // Collect RUM data
 const rum = new RUMCollector()

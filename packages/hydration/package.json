@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/hydration",
+  "name": "@rankforge-root/hydration",
   "version": "0.1.0",
   "description": "SSR/CSR hydration mismatch detection and fix suggestions for React and Next.js",
   "license": "MIT",

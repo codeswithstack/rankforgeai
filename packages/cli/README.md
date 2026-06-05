@@ -1,10 +1,10 @@
-# @rankforge/cli
+# @rankforge-root/cli
 
 Command-line interface for RankForge AI.
 
 ## Install
 ```bash
-npm install -g @rankforge/cli
+npm install -g @rankforge-root/cli
 ```
 
 ## Commands
@@ -44,7 +44,7 @@ rankforge monitor --interval 300
 ## Programmatic API
 
 ```ts
-import { RankForgeCLI, MockFileSystem } from '@rankforge/cli'
+import { RankForgeCLI, MockFileSystem } from '@rankforge-root/cli'
 
 const cli = new RankForgeCLI()
 await cli.run(['audit', '--url', 'https://example.com', '--json'])

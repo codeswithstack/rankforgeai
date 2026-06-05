@@ -1,15 +1,15 @@
-# @rankforge/audit
+# @rankforge-root/audit
 
 Full-site SEO audit engine with pluggable HTTP fetcher.
 
 ## Install
 ```bash
-npm install @rankforge/audit
+npm install @rankforge-root/audit
 ```
 
 ## Usage
 ```ts
-import { runAudit, AuditEngine } from '@rankforge/audit'
+import { runAudit, AuditEngine } from '@rankforge-root/audit'
 
 // Quick single-page audit
 const report = await runAudit({

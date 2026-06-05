@@ -1,15 +1,15 @@
-# @rankforge/core
+# @rankforge-root/core
 
 HTML parser, web crawler, SSR analyzer, and AST inspection for RankForge AI.
 
 ## Install
 ```bash
-npm install @rankforge/core
+npm install @rankforge-root/core
 ```
 
 ## Usage
 ```ts
-import { parseHTML, extractMeta, extractHeadings, extractLinks, CrawlEngine, analyzeSSR, SSRAnalyzer, ASTParser } from '@rankforge/core'
+import { parseHTML, extractMeta, extractHeadings, extractLinks, CrawlEngine, analyzeSSR, SSRAnalyzer, ASTParser } from '@rankforge-root/core'
 
 // Parse HTML
 const doc = parseHTML('<html><head><title>My Page</title></head><body><h1>Hi</h1></body></html>')

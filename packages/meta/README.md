@@ -1,15 +1,15 @@
-# @rankforge/meta
+# @rankforge-root/meta
 
 Meta tag generation, validation, and SERP preview.
 
 ## Install
 ```bash
-npm install @rankforge/meta
+npm install @rankforge-root/meta
 ```
 
 ## Usage
 ```ts
-import { generateMeta, validateMeta, truncateTitle, generateSERPPreview } from '@rankforge/meta'
+import { generateMeta, validateMeta, truncateTitle, generateSERPPreview } from '@rankforge-root/meta'
 
 const meta = generateMeta({
   title: 'My Page Title',

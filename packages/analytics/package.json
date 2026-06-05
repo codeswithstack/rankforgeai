@@ -1,5 +1,5 @@
 {
-  "name": "@rankforge/analytics",
+  "name": "@rankforge-root/analytics",
   "version": "0.1.0",
   "description": "Keyword ranking tracker, indexing stats, crawl coverage, and traffic analytics",
   "license": "MIT",

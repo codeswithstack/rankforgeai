@@ -1,15 +1,15 @@
-# @rankforge/i18n
+# @rankforge-root/i18n
 
 International SEO — hreflang generation, locale routing, and RTL support.
 
 ## Install
 ```bash
-npm install @rankforge/i18n
+npm install @rankforge-root/i18n
 ```
 
 ## Usage
 ```ts
-import { generateHreflang, validateHreflang, generateLocaleCanonical, generateRTLMeta, detectUntranslatedPages } from '@rankforge/i18n'
+import { generateHreflang, validateHreflang, generateLocaleCanonical, generateRTLMeta, detectUntranslatedPages } from '@rankforge-root/i18n'
 
 // Generate hreflang tags (auto-adds x-default)
 const tags = generateHreflang([

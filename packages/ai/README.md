@@ -1,10 +1,10 @@
-# @rankforge/ai
+# @rankforge-root/ai
 
 AI-powered SEO — meta generation, link suggestions, content analysis, fix generation, and copilot.
 
 ## Install
 ```bash
-npm install @rankforge/ai
+npm install @rankforge-root/ai
 ```
 
 ## Setup
@@ -28,7 +28,7 @@ const llm = {
 
 ## Usage
 ```ts
-import { AIMetaGenerator, AILinkSuggester, AIContentAnalyzer, AIFixGenerator, AICopilot } from '@rankforge/ai'
+import { AIMetaGenerator, AILinkSuggester, AIContentAnalyzer, AIFixGenerator, AICopilot } from '@rankforge-root/ai'
 
 // Generate meta tags
 const gen = new AIMetaGenerator(llm)
